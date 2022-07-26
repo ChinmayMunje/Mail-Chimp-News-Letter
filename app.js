@@ -32,10 +32,10 @@ app.post("/",function(req,res){
   };
 
   var jsonData = JSON.stringify(data);
-  const url = "https://us17.api.mailchimp.com/3.0/lists/451972f7fe";
+  const url = "Enter url";
   const options = {
     method: "POST",
-    auth: "technicalramu:6e8fcf96f021fabde605926a99b62ba9-us17"
+    auth: "Enter authentication code"
   }
 
   const request = https.request(url, options, function(response){
@@ -61,9 +61,3 @@ app.post("/failure",function(req,res){
 app.listen(process.env.PORT || 3000, function(){
   console.log("server started on port 3000");
 });
-
-//API KEY
-// 6e8fcf96f021fabde605926a99b62ba9-us17
-
-//LIST id
-//  451972f7fe
